@@ -1,0 +1,29 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "SpanishWineOntology:WineRating" "SpanishWineOntology:WineFlavor" "SpanishWineOntology:WineAcidity" "SpanishWineOntology:MediumPrice" "SpanishWineOntology:WineEffervescence" "SpanishWineOntology:Grape" "SpanishWineOntology:WineBody" "SpanishWineOntology:Price" "SpanishWineOntology:IdealTemperature" "SpanishWineOntology:LowQuality" "SpanishWineOntology:WineryRating" "SpanishWineOntology:HighQuality" "SpanishWineOntology:Descriptor" "SpanishWineOntology:WineType" "SpanishWineOntology:Region" "SpanishWineOntology:WineTaste" "SpanishWineOntology:WineAppearance" "SpanishWineOntology:VintageYear" "SpanishWineOntology:HighPrice" "SpanishWineOntology:WineQuality" "SpanishWineOntology:Wine" "SpanishWineOntology:MediumQuality" "SpanishWineOntology:Winery" "SpanishWineOntology:LowPrice" "SpanishWineOntology:AlcoholLevel" "SpanishWineOntology:Country" ; /*classes style*/
+	"SpanishWineOntology:Region" -> "SpanishWineOntology:Country" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:VintageYear" -> "SpanishWineOntology:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:Price" -> "SpanishWineOntology:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:MediumQuality" -> "SpanishWineOntology:WineQuality" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:WineRating" -> "SpanishWineOntology:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:Descriptor" -> "SpanishWineOntology:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:WineType" -> "SpanishWineOntology:Descriptor" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:HighPrice" -> "SpanishWineOntology:Price" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:WineAcidity" -> "SpanishWineOntology:WineTaste" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:LowPrice" -> "SpanishWineOntology:Price" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:WineEffervescence" -> "SpanishWineOntology:Descriptor" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:MediumPrice" -> "SpanishWineOntology:Price" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:WineryRating" -> "SpanishWineOntology:Winery" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:WineQuality" -> "SpanishWineOntology:Descriptor" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:WineTaste" -> "SpanishWineOntology:Descriptor" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:WineAppearance" -> "SpanishWineOntology:Descriptor" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:AlcoholLevel" -> "SpanishWineOntology:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:LowQuality" -> "SpanishWineOntology:WineQuality" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:WineFlavor" -> "SpanishWineOntology:WineTaste" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:HighQuality" -> "SpanishWineOntology:WineQuality" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:WineBody" -> "SpanishWineOntology:WineTaste" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:Grape" -> "SpanishWineOntology:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:IdealTemperature" -> "SpanishWineOntology:Wine" [ label = "rdfs:subClassOf" ];
+
+}
